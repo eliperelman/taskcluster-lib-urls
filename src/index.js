@@ -66,3 +66,9 @@ exports.ui = (rootUrl, path) => {
     `https://tools.taskcluster.net/${path}` :
     `${rootUrl}/${path}`;
 };
+
+/**
+ * Return the standardized taskcluster "testing" rootUrl.
+ * Useful for nock and such things.
+ */
+exports.testRootUrl = () => 'https://tc-tests.localhost';
